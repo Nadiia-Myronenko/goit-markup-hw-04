@@ -1,6 +1,7 @@
 :root {
   --main-text-color: #757575;
   --brand-color: #2196f3;
+  --hover-button: #188ce8;
   --hedding-color: #212121;
   --button-background: #f5f4fa;
   --light-color: #ffffff;
@@ -51,6 +52,7 @@ h2 {
 }
 .section {
   padding: 94px 0;
+  min-width: 1200px;
 }
 /* Header styles */
 
@@ -112,6 +114,11 @@ h2 {
   color: var(--main-text-color);
   text-decoration: none;
 }
+.header-block .nav-link,
+.header-block .address-link {
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.active,
@@ -128,10 +135,20 @@ h2 {
 /* Styles for main section of index.html */
 /* Hero section */
 .hero {
-  background: var(--hero-background);
+  background-color: var(--hero-background);
+}
+.overlay {
+  background-image: url("../images/bg-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  min-width: 1200px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero .container {
-  padding: 106px 282px;
+  padding: 200px 282px;
 }
 .main-heading {
   margin-bottom: 30px;
@@ -161,7 +178,7 @@ h2 {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  text-shadow: 2px 1px 5px #2c2c31;
+  background: var(--hover-button);
   cursor: pointer;
 }
 /* Herro secion end*/
@@ -326,6 +343,7 @@ h2 {
   color: var(--light-color);
   line-height: 1.714;
   background: var(--hero-background);
+  min-width: 1200px;
 }
 .footer-logo {
   display: block;
