@@ -109,7 +109,7 @@ h2 {
   margin-left: 50px;
 }
 .address-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -131,15 +131,13 @@ h2 {
 }
 .address-link .icon-envelope {
   fill: currentColor;
-  /* width: 16px;*/
+  width: 16px;
   height: 12px;
-  display: block;
 }
 .address-link .icon-smartphone {
   fill: currentColor;
   width: 10px;
   height: 16px;
-  display: block;
 }
 .header-block {
   border-bottom: 1px solid var(--border-color);
