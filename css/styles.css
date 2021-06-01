@@ -10,6 +10,8 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --card-border-color: #eeeeee;
   --overlay-color: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -122,6 +124,8 @@ h2 {
 .header-block .address-link {
   padding-top: 8px;
   padding-bottom: 7px;
+  display: flex;
+  align-items: center;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -130,13 +134,13 @@ h2 {
 .address-link:focus {
   color: var(--brand-color);
 }
-.address-link .icon-envelope {
+.address-link .icon {
   fill: currentColor;
   width: 16px;
-  height: 12px;
+  height: 16px;
+  margin-right: 10px;
 }
-.address-link .icon-smartphone {
-  fill: currentColor;
+.address-link use {
   width: 10px;
   height: 16px;
 }
@@ -253,7 +257,7 @@ h2 {
 .team-cards {
   display: flex;
 }
-.team-cards > li {
+.team-cards > .card {
   width: 270px;
   padding-bottom: 30px;
   background: #ffffff;
@@ -265,7 +269,7 @@ h2 {
   display: block;
   min-width: 100%;
 }
-.team-cards > li:not(:last-child) {
+.team-cards > .card:not(:last-child) {
   margin-right: 30px;
 }
 .team-cards h3 {
@@ -283,8 +287,68 @@ h2 {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.team-cards .social-networks-list {
+  display: flex;
+  margin: 0 32px;
+  justify-content: space-between;
+}
+.team-cards .button {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: var(--light-color);
+  color: var(--icon-color);
+  padding: 12px;
+  border-radius: 50%;
+}
+.team-cards .social-network-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.team-cards .button:hover,
+.team-cards .button:focus {
+  background: var(--brand-color);
+  color: var(--light-color);
 }
 /* Team section end */
+
+/* Regular customers section */
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients .company-item {
+  width: 170px;
+  height: 92px;
+}
+.clients .company-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients .company-link {
+  color: var(--icon-color);
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  padding: 0 32px;
+}
+.clients .company-link:hover,
+.clients .company-link:focus {
+  color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+.clients .company-icon {
+  fill: currentColor;
+  width: 106px;
+  height: 106px;
+  margin-top: -5px;
+}
+/* Regular customers section end */
+
 /* Styles for main section of index.html end */
 
 /* Styles for main section of the page portfolio.html */
@@ -370,6 +434,17 @@ h2 {
   background: var(--hero-background);
   min-width: 1200px;
 }
+.footer-block .container {
+  display: flex;
+}
+.adress-and-logo-wrapper {
+  width: 231px;
+  margin-right: 70px;
+}
+.social-networks-wrapper {
+  width: 206px;
+  padding-top: 12px;
+}
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -393,4 +468,35 @@ h2 {
   cursor: pointer;
   color: var(--brand-color);
   font-weight: normal;
+}
+.footer-block .social-networks-list {
+  display: flex;
+  width: 206px;
+  /* margin: 0 32px;*/
+  justify-content: space-between;
+}
+.footer-block .button {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: var(--footer-icon-bg);
+  color: var(--light-color);
+  padding: 12px;
+  border-radius: 50%;
+}
+.footer-block .social-network-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.footer-block .button:hover,
+.footer-block .button:focus {
+  background: var(--brand-color);
+}
+.footer-block .appeal {
+  font-weight: bold;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }

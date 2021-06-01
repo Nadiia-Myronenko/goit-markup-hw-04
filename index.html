@@ -24,9 +24,9 @@
                 </ul>
             </nav>
             <ul class="address-list">
-                <li><a class="address-link" href="mailto:info@devstudio.com"><svg class="icon-envelope"><use href="./images/symbol-defs.svg#envelope"></use></svg><span>info@devstudio.com</span></a>
+                <li><a class="address-link" href="mailto:info@devstudio.com"><svg class="icon"><use href="./images/symbol-defs.svg#envelope"></use></svg><span>info@devstudio.com</span></a>
                 </li>
-                <li><a class="address-link" href="tel:+380961111111"><svg class="icon-smartphone"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11</a>
+                <li><a class="address-link" href="tel:+380961111111"><svg class="icon"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -101,48 +101,131 @@
             <div class="container">
                 <h2>Наша команда</h2>
                 <ul class="team-cards">
-                    <li>
+                    <li class="card">
                         <img src="./images/igor_demianenko.jpg" alt="Игорь Демьяненко" width="270">
                         <h3>Игорь Демьяненко</h3>
                         <p class="profession">Product Designer</p>
+                        <ul class="social-networks-list">
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg></a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="card">
                         <img src="./images/olga_repina.jpg" alt="Ольга Репина" width="270">
                         <h3>Ольга Репина</h3>
                         <p class="profession">Frontend Developer</p>
+                        <ul class="social-networks-list">
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#instagram"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#twitter"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#facebook"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                                    </svg></a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="card">
                         <img src="./images/nikolay_tarasov.jpg" alt="Николай Тарасов" width="270">
                         <h3>Николай Тарасов</h3>
                         <p class="profession">Marketing</p>
+                        <ul class="social-networks-list">
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#instagram"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#twitter"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#facebook"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                                    </svg></a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="card">
                         <img src="./images/mihail_ermakov.jpg" alt="Михаил Ермаков" width="270">
                         <h3>Михаил Ермаков</h3>
                         <p class="profession">UI Designer</p>
+                        <ul class="social-networks-list">
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#instagram"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#twitter"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#facebook"></use>
+                                    </svg></a></li>
+                            <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                                    </svg></a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </section>
+        <!--Секция с логотипами постоянных клиентов-->
         <section class="clients section">
             <div class="container">
                 <h2>Постоянные клиенты</h2>
-                <ul class="team-cards">
-                    <li>
-                        <a href="/">
-                       <svg class="company-icon" width="100px" height:"100px">
-                            <use href="./images/twitter.svg"></use>
-                        </svg>
+                <ul class="companies-list">
+                    <li class="company-item">
+                        <a class="company-link" href="/">
+                            <svg class="company-icon">
+                                <use href="./images/symbol-defs.svg#logo1"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li>
-                        
+                    <li class="company-item">
+                        <a class="company-link" href="/">
+                            <svg class="company-icon">
+                                <use href="./images/symbol-defs.svg#logo2"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        
+                    <li class="company-item">
+                        <a class="company-link" href="/">
+                            <svg class="company-icon">
+                                <use href="./images/symbol-defs.svg#logo3"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        
+                    <li class="company-item">
+                        <a class="company-link" href="/">
+                            <svg class="company-icon">
+                                <use href="./images/symbol-defs.svg#logo4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company-link" href="/">
+                            <svg class="company-icon">
+                                <use href="./images/symbol-defs.svg#logo5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="company-item">
+                        <a class="company-link" href="/">
+                            <svg class="company-icon">
+                                <use href="./images/symbol-defs.svg#logo6"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -151,12 +234,31 @@
     <!--Подвал страницы-->
     <footer class="footer-block">
         <div class="container">
-            <a class="logo footer-logo" href="./index.html"><span class="brand-color">Web</span>Studio</a>
-            <address class="addr">
-                <p class="physical-adress">г. Киев, пр-т Леси Украинки, 26</p>
-                <a class="footer-link" href="mailto:info@example.com">info@example.com</a></address>
-                <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </address>
+            <div class="adress-and-logo-wrapper">
+                <a class="logo footer-logo" href="./index.html"><span class="brand-color">Web</span>Studio</a>
+                <address class="addr">
+                    <p class="physical-adress">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a class="footer-link" href="mailto:info@example.com">info@example.com</a></address>
+                    <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </address>
+            </div>
+            <div class="social-networks-wrapper">
+                <p class="appeal">присоединяйтесь</p>
+                <ul class="social-networks-list">
+                    <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg></a></li>
+                    <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg></a></li>
+                    <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg></a></li>
+                    <li class="social-networks-item"><a class="button" href="/"><svg class="social-network-icon">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
