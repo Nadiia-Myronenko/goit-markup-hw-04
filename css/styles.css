@@ -329,12 +329,13 @@ h2 {
 }
 .clients .company-link {
   color: var(--icon-color);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  padding: 0 32px;
 }
 .clients .company-link:hover,
 .clients .company-link:focus {
@@ -345,7 +346,6 @@ h2 {
   fill: currentColor;
   width: 106px;
   height: 106px;
-  margin-top: -5px;
 }
 /* Regular customers section end */
 
