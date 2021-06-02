@@ -111,6 +111,8 @@ h2 {
   margin-left: 50px;
 }
 .address-link {
+  display: flex;
+  vertical-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -134,8 +136,6 @@ h2 {
 }
 .address-link .icon {
   fill: currentColor;
-  width: 16px;
-  height: 16px;
   margin-right: 10px;
 }
 .address-link use {
@@ -342,8 +342,6 @@ h2 {
 }
 .clients .company-icon {
   fill: currentColor;
-  width: 106px;
-  height: 106px;
 }
 /* Regular customers section end */
 
