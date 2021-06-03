@@ -145,23 +145,22 @@ h2 {
 /* Hero section */
 .hero {
   background-color: var(--hero-background);
-}
-.overlay {
   background-image: linear-gradient(var(--overlay-color), var(--overlay-color)),
     url("../images/bg-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1600px;
-  min-width: 1200px;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
 }
-.hero .container {
-  padding: 200px 282px;
+.overlay {
+  padding: 200px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .main-heading {
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -169,6 +168,8 @@ h2 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-color);
+  width: 696px;
+  margin: 0 auto 30px;
 }
 .hero-btn {
   display: block;
@@ -198,24 +199,25 @@ h2 {
 }
 .features-list {
   display: flex;
-  flex-wrap: wrap;
 }
 .features-list-item {
-  width: 270px;
+  /* width: 270px;*/
 }
 .features-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .features-list .icon-wrapper {
+  display: flex;
+  justify-content: center;
   background-color: var(--button-background);
-  padding: 25px 100px;
+  padding: 25px 0;
   margin-bottom: 30px;
 }
 .features-list .icon {
   width: 70px;
   height: 70px;
 }
-.features h3 {
+.features-title {
   margin-bottom: 10px;
   font-weight: bold;
   line-height: 1.14;
@@ -246,10 +248,7 @@ h2 {
 .team-cards {
   display: flex;
 }
-.team-cards > .card {
-  width: 270px;
-  padding-bottom: 30px;
-  background: #ffffff;
+.team-cards .card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -261,9 +260,12 @@ h2 {
 .team-cards .card:not(:last-child) {
   margin-right: 30px;
 }
+.team-content-wrapper {
+  padding: 30px 32px;
+  background: #ffffff;
+}
 .team-cards-title {
   margin-bottom: 10px;
-  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -278,7 +280,6 @@ h2 {
 }
 .team-cards .social-networks-list {
   display: flex;
-  margin: 0 32px;
   justify-content: space-between;
 }
 .team-cards .button {
@@ -304,16 +305,12 @@ h2 {
 /* Regular customers section */
 .companies-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-.clients .company-item {
-  width: 170px;
-  height: 92px;
-}
-.clients .company-item:not(:last-child) {
+.company-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients .company-link {
+.company-link {
   color: var(--icon-color);
   display: flex;
   justify-content: center;
@@ -322,14 +319,17 @@ h2 {
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  padding: 16px 32px;
 }
-.clients .company-link:hover,
-.clients .company-link:focus {
+.company-link:hover,
+.company-link:focus {
   color: var(--brand-color);
   border-color: var(--brand-color);
 }
-.clients .company-icon {
+.company-icon {
   fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
 /* Regular customers section end */
 
@@ -421,6 +421,7 @@ h2 {
 }
 .footer-block .container {
   display: flex;
+  align-items: baseline;
 }
 .adress-and-logo-wrapper {
   width: 231px;
@@ -428,21 +429,17 @@ h2 {
 }
 .social-networks-wrapper {
   width: 206px;
-  padding-top: 12px;
 }
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  margin-right: 0;
   color: var(--light-color);
 }
 .addr {
   font-style: normal;
 }
-.physical-adress {
-  margin-bottom: 9px;
-}
-.footer-link {
-  display: block;
+.footer-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-link {
