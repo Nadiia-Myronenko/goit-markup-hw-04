@@ -45,7 +45,6 @@ h2 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--hedding-color);
 }
 .container {
@@ -79,7 +78,6 @@ h2 {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
-  letter-spacing: 0.03em;
   color: var(--hedding-color);
 }
 .brand-color {
@@ -96,7 +94,6 @@ h2 {
 .nav-link {
   display: block;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--hedding-color);
@@ -114,10 +111,8 @@ h2 {
   display: flex;
   vertical-align: center;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
   text-decoration: none;
 }
 .header-block .nav-link,
@@ -225,9 +220,7 @@ h2 {
 .features h3 {
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hedding-color);
 }
@@ -277,14 +270,12 @@ h2 {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--hedding-color);
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 .team-cards .social-networks-list {
@@ -296,7 +287,6 @@ h2 {
   display: block;
   width: 44px;
   height: 44px;
-  background: var(--light-color);
   color: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
@@ -368,7 +358,6 @@ h2 {
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
-  letter-spacing: 0.03em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
@@ -393,10 +382,8 @@ h2 {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  background: var(--light-color);
 }
 .projects-list .card-link {
-  color: var(--main-text-color);
   display: block;
   border: 1px solid var(--card-border-color);
 }
@@ -423,7 +410,6 @@ h2 {
 .subheading {
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 0.03em;
 }
 /* Project cards styles end*/
 
@@ -431,7 +417,6 @@ h2 {
 .footer-block {
   padding: 60px 0;
   color: var(--light-color);
-  line-height: 1.714;
   background: var(--hero-background);
   min-width: 1200px;
 }
@@ -497,7 +482,6 @@ h2 {
 .footer-block .appeal {
   font-weight: bold;
   line-height: 1.143;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
