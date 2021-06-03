@@ -88,7 +88,7 @@ h2 {
   justify-content: left;
   align-items: center;
 }
-.main-nav > li:not(:first-child) {
+.main-nav-item:not(:first-child) {
   margin-left: 50px;
 }
 .nav-link {
@@ -104,7 +104,7 @@ h2 {
   justify-content: right;
   align-items: center;
 }
-.address-list > li:not(:first-child) {
+.address-list-item:not(:first-child) {
   margin-left: 50px;
 }
 .address-link {
@@ -114,6 +114,7 @@ h2 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--main-text-color);
 }
 .header-block .nav-link,
 .header-block .address-link {
@@ -133,10 +134,7 @@ h2 {
   fill: currentColor;
   margin-right: 10px;
 }
-.address-link use {
-  width: 10px;
-  height: 16px;
-}
+
 .header-block {
   border-bottom: 1px solid var(--border-color);
 }
@@ -202,10 +200,10 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.features-list > li {
+.features-list-item {
   width: 270px;
 }
-.features-list > li:not(:last-child) {
+.features-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .features-list .icon-wrapper {
@@ -233,11 +231,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.services-list img {
+.services-list-img {
   display: block;
   max-width: 100%;
 }
-.services-list > li:not(:last-child) {
+.services-list-item:not(:last-child) {
   margin-right: 30px;
 }
 /* Servises section end */
@@ -256,14 +254,14 @@ h2 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-cards img {
+.team-cards-img {
   display: block;
   min-width: 100%;
 }
-.team-cards > .card:not(:last-child) {
+.team-cards .card:not(:last-child) {
   margin-right: 30px;
 }
-.team-cards h3 {
+.team-cards-title {
   margin-bottom: 10px;
   padding-top: 30px;
   font-weight: 500;
@@ -344,7 +342,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.button-list > li:not(:last-child) {
+.button-list-item:not(:last-child) {
   margin-right: 8px;
 }
 .btn {
@@ -378,7 +376,7 @@ h2 {
   margin-bottom: -30px;
   margin-right: -30px;
 }
-.projects-list > .card {
+.projects-list .card {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -386,20 +384,21 @@ h2 {
 .projects-list .card-link {
   display: block;
   border: 1px solid var(--card-border-color);
+  color: var(--main-text-color);
 }
 .projects-list .card-link:hover,
 .projects-list .card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects-list img {
+.projects-list-img {
   display: block;
   min-width: 100%;
 }
 .projects-list .card-content {
   padding: 20px 24px;
 }
-.projects h3 {
+.projects-card-title {
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -458,7 +457,6 @@ h2 {
 .footer-block .social-networks-list {
   display: flex;
   width: 206px;
-  /* margin: 0 32px;*/
   justify-content: space-between;
 }
 .footer-block .button {
