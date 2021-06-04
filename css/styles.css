@@ -195,7 +195,8 @@ h2 {
 /* Herro secion end*/
 /* Work peculiarities section */
 .hidden-heading {
-  display: none;
+  font-size: 0;
+  line-height: 0;
 }
 .features-list {
   display: flex;
