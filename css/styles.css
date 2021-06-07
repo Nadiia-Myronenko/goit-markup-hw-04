@@ -384,7 +384,6 @@ h2 {
 }
 .projects-list .card-link {
   display: block;
-  border: 1px solid var(--card-border-color);
   color: var(--main-text-color);
 }
 .projects-list .card-link:hover,
@@ -398,6 +397,7 @@ h2 {
 }
 .projects-list .card-content {
   padding: 20px 24px;
+  border: 1px solid var(--card-border-color);
 }
 .projects-card-title {
   margin-bottom: 4px;
